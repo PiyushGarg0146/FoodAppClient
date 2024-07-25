@@ -1,0 +1,21 @@
+.mobile{
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    text-align: center;
+    gap: 40px;
+}
+
+.mobile h1{
+    font-weight: 500;
+}
+
+.mobile img{
+    padding: 10px;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.mobile img:hover{
+    transform: scale(1.05);
+}

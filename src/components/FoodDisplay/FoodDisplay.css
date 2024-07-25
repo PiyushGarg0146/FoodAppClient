@@ -1,0 +1,112 @@
+.food-display {
+    padding: 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+  
+.food-display h5 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 40px 30px;
+    justify-content: space-between;
+
+}
+
+.food-item {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+    padding-bottom: 30px;
+    position: relative;
+    animation: fadein 1s;
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.food-item:hover{
+    transform: scale(1.02);
+}
+
+.food-item .image{
+    position: relative;
+}
+
+.image .white-icon{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.image .red-green-icon{
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.red-green-icon img{
+    width: 27px;
+}
+
+.food-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
+}
+  
+.name-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+  
+.name-rating p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+}
+  
+.name-rating img {
+    width: 100px;
+    height: auto;
+}
+  
+.descrip {
+    font-size: 0.875rem;
+    color: #666;
+    margin: 10px 0;
+}
+  
+.rate {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0%;
+    left: 2px;
+}

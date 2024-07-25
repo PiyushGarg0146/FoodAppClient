@@ -1,0 +1,75 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 0px;
+    align-items: center;
+}
+
+.logo{
+    height: 30px;
+    cursor: pointer;
+    
+}
+
+.navbar-menu{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 20px;
+    list-style-type: none;
+    font-size: large;
+    color: #49557e;
+}
+
+.navbar-menu Link, a{
+    color: #49557e;
+    text-decoration: none;
+}
+
+.active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+    transition: 0.3s;
+}
+
+.navbar-right{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap:20px
+}
+
+.navbar-right img{
+    height: 25px;
+    cursor: pointer;
+}
+
+.navbar-right button{
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background: transparent;
+    color: #49557e;
+    border: 1px solid tomato;
+    padding: 5px 20px;
+    transition: 0.3s;
+}
+
+.navbar-right button:hover{
+    background-color: #fff4f2;
+}
+
+.basket{
+    position: relative;
+}
+
+.dot{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    min-height: 10px;
+    min-width: 10px;
+    border-radius: 50%;
+    background-color: tomato;
+}
